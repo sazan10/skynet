@@ -11,5 +11,5 @@ jobs:
         ref: 3761fdbe6866d20014bc1676dc4ba58052914c2d
 
     - name: Build C Code
-      run: make
+      run: make linux
         
