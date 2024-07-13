@@ -55,7 +55,7 @@ jobs:
                   for command in "${commands[@]}"; do
                       for sub_command in "${sub_commands[@]}"; do
                           echo "$command + $sub_command"
-                          /tmp/chap/build-chap/chap "$core_file" <<EOF 2>/dev/null
+                          /tmp/chap/build-chap/chap "$core_file" --output=report.html <<EOF 2>/dev/null 
                           $command $sub_command
           EOF
                       done
